@@ -7,8 +7,20 @@
     <groupId>com.github.ptndoss</groupId>
     <artifactId>TwitterStream _kafka</artifactId>
     <version>1.0</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
-     <dependencies>
+    <dependencies>
          <!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients -->
          <dependency>
              <groupId>org.apache.kafka</groupId>
